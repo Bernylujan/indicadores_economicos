@@ -14,3 +14,17 @@ async function obtenerTipoCambio() {
         valor: obs.querySelector('dato').textContent
     }));
 }
+
+// Crear siguiente funcion con Spread:
+// pread & Inmutabilidad
+// Copiar/expandir arrays y objetos sin mutar el original.
+// sintaxis
+// [...arr]             // copia array
+// { ...obj }           // copia objeto
+// { ...obj, key: val } // sobreescribir
+// [...a, ...b]        // combinar
+// ejemplo mínimo
+// const original = { a: 1, b: 2 };
+// const copia = { ...original, b: 99 };
+// original → {a:1, b:2}  ← sin mutar
+// copia    → {a:1, b:99}
